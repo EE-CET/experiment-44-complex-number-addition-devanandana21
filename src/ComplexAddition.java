@@ -31,8 +31,8 @@ public class ComplexAddition {
 
         Complex sum = c1.add(c2);
 
-        // Output in required format
-        System.out.println(sum.real + " + i" + sum.imag);
+        // EXACT output format: a + bi
+        System.out.println(sum.real + " + " + sum.imag + "i");
 
         sc.close();
     }
