@@ -3,14 +3,10 @@ import java.util.Scanner;
 class Complex {
     int real;
     int imag;
-
-    // Constructor
     Complex(int real, int imag) {
         this.real = real;
         this.imag = imag;
     }
-
-    // Method to add two complex numbers
     Complex add(Complex c) {
         return new Complex(this.real + c.real, this.imag + c.imag);
     }
@@ -30,8 +26,6 @@ public class ComplexAddition {
         Complex c2 = new Complex(r2, i2);
 
         Complex sum = c1.add(c2);
-
-        // EXACT output format: a + bi
         System.out.println(sum.real + " + " + sum.imag + "i");
 
         sc.close();
